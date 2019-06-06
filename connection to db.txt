@@ -1,0 +1,14 @@
+
+String connectionString = "mongodb+srv://m220student:m220password@mflix-nv0hf.mongodb.net/test?retryWrites=true"; 
+MongoClientURI uri = new MongoClientURI(connectionString);
+MongoClient mongoClient = new MongoClient(uri);
+MongoDatabase database = mongoClient.getDatabase("test");
+
+connection string only:
+mongodb+srv://m220student:m220password@mflix-nv0hf.mongodb.net/test?retryWrites=true
+
+mongo shell:
+mongo "mongodb+srv://mflix-nv0hf.mongodb.net/test" --username m220student --password m220password
+
+Compass:
+mongodb+srv://m220student:m220password@mflix-nv0hf.mongodb.net/test

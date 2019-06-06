@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: mflix.api.daos.FacetedSearchTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.724 s <<< FAILURE! - in mflix.api.daos.FacetedSearchTest
+testFacetedSearchPaging(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0.14 s  <<< FAILURE!
+java.lang.AssertionError: Check your movies sub-pipeline on getMoviesFaceted() for multiple cast in paged results expected:<11> but was:<0>
+	at mflix.api.daos.FacetedSearchTest.testFacetedSearchPaging(FacetedSearchTest.java:74)
+
+testFacetedMultipleCast(mflix.api.daos.FacetedSearchTest)  Time elapsed: 0.135 s  <<< FAILURE!
+java.lang.AssertionError: Check your movies sub-pipeline on getMoviesFaceted() in multiple cast for multiple cast expected:<9> but was:<0>
+	at mflix.api.daos.FacetedSearchTest.testFacetedMultipleCast(FacetedSearchTest.java:102)
+
